@@ -1,0 +1,12 @@
+services:
+  looking-glass-web-alternative:
+    build: .
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./backend/uploads:/app/backend/uploads
+      - ./backend/references:/app/backend/references
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

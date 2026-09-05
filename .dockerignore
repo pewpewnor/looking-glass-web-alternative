@@ -1,0 +1,10 @@
+.git
+.venv
+__pycache__
+*.py[cod]
+*.DS_Store
+artifacts
+backend/uploads
+backend/references
+data
+instruction.wav
